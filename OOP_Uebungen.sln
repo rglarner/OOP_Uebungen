@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaenderTeil1", "OOP_Uebunge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaenderTeil2", "OOP_Uebungen\AB03\LaenderTeil2\LaenderTeil2.csproj", "{813BF884-DB91-481B-9EE0-0AD34FF798D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil1", "OOP_Uebungen\AB02\LagerverwaltungTeil1\LagerverwaltungTeil1\LagerverwaltungTeil1.csproj", "{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{813BF884-DB91-481B-9EE0-0AD34FF798D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{813BF884-DB91-481B-9EE0-0AD34FF798D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{813BF884-DB91-481B-9EE0-0AD34FF798D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
