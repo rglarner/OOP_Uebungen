@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaenderTeil2", "OOP_Uebunge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil1", "OOP_Uebungen\AB02\LagerverwaltungTeil1\LagerverwaltungTeil1\LagerverwaltungTeil1.csproj", "{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil2", "OOP_Uebungen\AB02\LagerverwaltungTeil2\LagerverwaltungTeil2.csproj", "{792CA78D-10BC-41A2-816C-0569FD58F1CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{549A0E92-E3ED-4D86-B501-86A5BA9F28F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
