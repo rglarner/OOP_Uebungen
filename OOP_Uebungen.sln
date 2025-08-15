@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil1", "OOP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil2", "OOP_Uebungen\AB02\LagerverwaltungTeil2\LagerverwaltungTeil2.csproj", "{792CA78D-10BC-41A2-816C-0569FD58F1CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotizenTeil1", "OOP_Uebungen\AB02\NotizenTeil1\NotizenTeil1.csproj", "{1940B7C0-E4CE-4BD8-ADF5-08166694090D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{792CA78D-10BC-41A2-816C-0569FD58F1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1940B7C0-E4CE-4BD8-ADF5-08166694090D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1940B7C0-E4CE-4BD8-ADF5-08166694090D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1940B7C0-E4CE-4BD8-ADF5-08166694090D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1940B7C0-E4CE-4BD8-ADF5-08166694090D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
