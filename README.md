@@ -91,3 +91,20 @@ Zudem soll eine neue Klasse "Notizsammlung" erstellt werden, die folgende Funkti
 - PRO: eine Methode, die alle Notizen nach Erstellungsdatum sortiert ausgibt
 ### PRO Thema JSON
 Serialisieren Sie eine der obigen Klassen (mit Collction) in eine JSON-Datei und laden Sie sie wieder. Achten Sie darauf, dass die Daten korrekt serialisiert und deserialisiert werden.
+## AB04 Zusatzthemen
+### Tickets mit Autoincrement (Klassenvariablen)
+Implementiere eine Klasse Ticket, deren jede Instanz automatisch eine eindeutige, fortlaufende ID erhält: 1, 2, 3, ...
+Anforderungen (Akzeptanzkriterien)
+1. Die Klasse besitzt:
+- eine statische Variable nextId (Startwert: 1), nicht öffentlich,
+- eine Instanz-Eigenschaft Id (nur lesbar),
+- weitere Felder/Eigenschaften wie Titel oder ErstelltAm.
+2. Beim Konstruktoraufruf:
+- wird Id auf den aktuellen Wert von nextId gesetzt,
+- danach wird nextId um 1 erhöht.
+- Id darf nachträglich nicht änderbar sein (read-only).
+3. In Main:
+- Erzeuge mindestens drei Objekte und gib deren Id und optional Titel aus.
+- Die ausgegebenen IDs müssen fortlaufend und eindeutig sein.
+### Parameter beim Start
+### Enum

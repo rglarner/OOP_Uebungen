@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil1", "OOP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil2", "OOP_Uebungen\AB02\LagerverwaltungTeil2\LagerverwaltungTeil2.csproj", "{5111A61E-E23A-3005-8B11-10F7193057E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tickets", "OOP_Uebungen\AB04\Tickets\Tickets.csproj", "{5BB29028-3174-46C9-80A8-99EBF1DC07DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{5111A61E-E23A-3005-8B11-10F7193057E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5111A61E-E23A-3005-8B11-10F7193057E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5111A61E-E23A-3005-8B11-10F7193057E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
