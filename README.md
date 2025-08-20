@@ -142,4 +142,19 @@ HALLO
 Definition in EBNF:  
 `app [-h|--help] [-u|--upper|-l|--lower] [-r N|--repeat N] <text>`
 
-### Enum
+### Logger (Enum)
+1. Definiere ein enum LogLevel mit den Werten:
+- Info
+- Warn
+- Error
+2. Implementiere eine Methode `Log` welche den Text farbig ausgibt:
+- Info → Weiss
+- Warn → Gelb
+- Error → Rot 
+3. Teste das Programm, indem du mehrere Nachrichten mit unterschiedlichen Levels ausgibst, z. B.:
+```
+Log("System gestartet", LogLevel.Info);
+Log("Speicherplatz knapp", LogLevel.Warn);
+Log("Verbindung verloren!", LogLevel.Error);
+```
+
