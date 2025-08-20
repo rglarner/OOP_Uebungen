@@ -1,51 +1,51 @@
-# OOP_Uebungen
-Dieses Repository enthält Übungen zur objektorientierten Programmierung (OOP) in C#.
-Es ist als Zusatzmaterial für die Vorlesung "Objektorientierte Programmierung" gedacht.
-Ich empfehle, die Übungen selbständig und ohne KI Hilfe zu lösen.
+ï»¿# OOP_Uebungen
+Dieses Repository enthÃ¤lt Ãœbungen zur objektorientierten Programmierung (OOP) in C#.
+Es ist als Zusatzmaterial fÃ¼r die Vorlesung "Objektorientierte Programmierung" gedacht.
+Ich empfehle, die Ãœbungen selbstÃ¤ndig und ohne KI Hilfe zu lÃ¶sen.
 ## AB02 Klassen zur Datenspeicherung
-### Länder (Teil 1)
-Erstellen Sie eine Klasse zur Speicherung von Ländern. Die Klasse soll folgende Daten abspeichern können:
+### LÃ¤nder (Teil 1)
+Erstellen Sie eine Klasse zur Speicherung von LÃ¤ndern. Die Klasse soll folgende Daten abspeichern kÃ¶nnen:
 - Name des Landes (als String)
 - ISO-Code (als String)
 - Hauptstadt (als String)
-- Fläche (als double)
+- FlÃ¤che (als double)
 - Einwohnerzahl (als int)
-- Währung (als String)
+- WÃ¤hrung (als String)
 
-Die Setter sollen gewisse Validierungen durchführen:
+Die Setter sollen gewisse Validierungen durchfÃ¼hren:
 - Der Name des Landes darf nicht leer sein.
 - Der ISO-Code muss genau 2 Zeichen lang sein.
 - Die Hauptstadt darf nicht leer sein.
-- Die Fläche muss größer als 0 sein.
-- Die Einwohnerzahl muss größer oder gleich 0 sein.
-- Die Währung darf nicht leer sein.
+- Die FlÃ¤che muss grÃ¶ÃŸer als 0 sein.
+- Die Einwohnerzahl muss grÃ¶ÃŸer oder gleich 0 sein.
+- Die WÃ¤hrung darf nicht leer sein.
 ### Notizen (Teil 1)
-Erstellen Sie eine Klasse zur Speicherung von Notizen. Die Klasse soll folgende Funktionalitäten bieten:
+Erstellen Sie eine Klasse zur Speicherung von Notizen. Die Klasse soll folgende FunktionalitÃ¤ten bieten:
 - Titel
 - Inhalt
 - Verfasser (als String)
 - Erstellungsdatum (als DateTime))
-- Änderungsdatum (als DateTime)
+- Ã„nderungsdatum (als DateTime)
 
-Das Erstellungsdatum soll automatisch gesetzt werden, wenn eine Notiz erstellt wird. Das Änderungsdatum soll aktualisiert werden, wenn der Inhalt öder Titel der Notiz geändert wird. Der Verfasser, Titel und Inhalt darf nicht leer sein. 
+Das Erstellungsdatum soll automatisch gesetzt werden, wenn eine Notiz erstellt wird. Das Ã„nderungsdatum soll aktualisiert werden, wenn der Inhalt Ã¶der Titel der Notiz geÃ¤ndert wird. Der Verfasser, Titel und Inhalt darf nicht leer sein. 
 ### Lagerverwaltung (Teil 1)
-Erstellen Sie eine Klasse "Lagerplatz" zur Verwaltung von Lagerbeständen. Die Klasse soll folgende Funktionalitäten bieten:
+Erstellen Sie eine Klasse "Lagerplatz" zur Verwaltung von LagerbestÃ¤nden. Die Klasse soll folgende FunktionalitÃ¤ten bieten:
 - Name des Lagerplatzes (als String)
-- Maximale Kapazität (als int)
+- Maximale KapazitÃ¤t (als int)
 - Name des gelagerten Produkts (als String)
 - Aktueller Bestand (als int)
 - Preis pro Einheit (als double)
 
-Die Setter sollen gewisse Validierungen durchführen:
+Die Setter sollen gewisse Validierungen durchfÃ¼hren:
 - Der Name des Lagerplatzes darf nicht leer sein.
-- Die maximale Kapazität muss größer als 0 sein.
+- Die maximale KapazitÃ¤t muss grÃ¶ÃŸer als 0 sein.
 - Der Name des Produkts darf nicht leer sein.
-- Der aktuelle Bestand muss zwischen 0 und der maximalen Kapazität liegen.
-- Der Preis pro Einheit muss größer oder gleich 0 sein.
+- Der aktuelle Bestand muss zwischen 0 und der maximalen KapazitÃ¤t liegen.
+- Der Preis pro Einheit muss grÃ¶ÃŸer oder gleich 0 sein.
 
 Es soll ein berechneter Wert geben, welcher den Gesamtwert des Lageplatzes angibt (Aktueller Bestand * Preis pro Einheit).
 ### Lagerverwaltung (Teil 2)
-In einem weiteren Schritt soll eine Klasse "Artikel" erstellt werden, die folgende Funktionalitäten bietet:
+In einem weiteren Schritt soll eine Klasse "Artikel" erstellt werden, die folgende FunktionalitÃ¤ten bietet:
 - Name des Artikels (als String)
 - Beschreibung (als String)
 - Preis (als double)
@@ -54,57 +54,92 @@ In einem weiteren Schritt soll eine Klasse "Artikel" erstellt werden, die folgen
 
 Ersetzen Sie in der Klasse "Lagerplatz" den Namen des Produkts durch einen Artikel und passen Sie die Validierungen sowie die Berechnung des Gesamtwerts des Lagerplatzes entsprechend an.
 ### PRO Thema JSON
-Speichern Sie eines der obigen Objekte in einer JSON-Datei und laden Sie es wieder. Nutzen Sie dafür die Bibliothek Newtonsoft.Json (Json.NET). Achten Sie darauf, dass die Daten korrekt serialisiert und deserialisiert werden.
+Speichern Sie eines der obigen Objekte in einer JSON-Datei und laden Sie es wieder. Nutzen Sie dafÃ¼r die Bibliothek Newtonsoft.Json (Json.NET). Achten Sie darauf, dass die Daten korrekt serialisiert und deserialisiert werden.
 ## AB03 Klassen komplett
-### Länder (Teil 2)
-Erstellen Sie eine Klasse "Kontinent", die folgende Funktionalitäten bietet:
+### LÃ¤nder (Teil 2)
+Erstellen Sie eine Klasse "Kontinent", die folgende FunktionalitÃ¤ten bietet:
 - Name des Kontinents (als String)
-- Collection von Ländern
-- eine Methode, die ein Land hinzufügt
+- Collection von LÃ¤ndern
+- eine Methode, die ein Land hinzufÃ¼gt
 - eine Methode, die ein Land entfernt anhand des ISO-Codes
-- eine Methode, die alle Länder ausgibt
+- eine Methode, die alle LÃ¤nder ausgibt
 - eine Methode, die ein Land nach ISO-Code sucht und ausgibt, falls das Land nicht gefunden wird, soll eine entsprechende Fehlermeldung ausgegeben werden.
 
-Wer will, kann noch eine Klasse "Welt" erstellen, die folgende Funktionalitäten bietet:
+Wer will, kann noch eine Klasse "Welt" erstellen, die folgende FunktionalitÃ¤ten bietet:
 - Collection von Kontinenten
-- eine Methode, die einen Kontinent hinzufügt
+- eine Methode, die einen Kontinent hinzufÃ¼gt
 - eine Methode, die einen Kontinent entfernt anhand des Namens
 - eine Methode, die alle Kontinente ausgibt
-- eine Methode, die einen Kontinent nach Namen sucht und alle Länder ausgibt, falls der Kontinent nicht gefunden wird, soll eine entsprechende Fehlermeldung ausgegeben werden.
-- eine Methode, die alle Länder nach Kontinenten sortiert ausgibt
-- PRO: eine Methode, die alle Länder aller Kontinente nach Fläche sortiert ausgibt
+- eine Methode, die einen Kontinent nach Namen sucht und alle LÃ¤nder ausgibt, falls der Kontinent nicht gefunden wird, soll eine entsprechende Fehlermeldung ausgegeben werden.
+- eine Methode, die alle LÃ¤nder nach Kontinenten sortiert ausgibt
+- PRO: eine Methode, die alle LÃ¤nder aller Kontinente nach FlÃ¤che sortiert ausgibt
 
 ### Notizen (Teil 2)
-Bauen Sie die Klasse "Notizen" aus AB02 weiter aus. Fügen Sie folgende Funktionalitäten hinzu:
-- Einen Wert: "geändert von" (als String)
+Bauen Sie die Klasse "Notizen" aus AB02 weiter aus. FÃ¼gen Sie folgende FunktionalitÃ¤ten hinzu:
+- Einen Wert: "geÃ¤ndert von" (als String)
 - Geeignet Methoden zur Verkapselung der Daten (Erstellen, Bearbeiten, Auslesen)
-- Der Verfasser, "geändert von" sowie die beiden Datumsangaben sollen nicht direkt verändert werden können.
-- PRO: Der Benutzername des Verfassers soll automatisch aus dem System ermittelt werden, wenn eine Notiz erstellt wird. (Gleiches für "geändert von")
+- Der Verfasser, "geÃ¤ndert von" sowie die beiden Datumsangaben sollen nicht direkt verÃ¤ndert werden kÃ¶nnen.
+- PRO: Der Benutzername des Verfassers soll automatisch aus dem System ermittelt werden, wenn eine Notiz erstellt wird. (Gleiches fÃ¼r "geÃ¤ndert von")
 
-Zudem soll eine neue Klasse "Notizsammlung" erstellt werden, die folgende Funktionalitäten bietet:
-- Enthält den Namen der Sammlung sowie eine "Collection" von Notizen
-- eine Methode, die eine Notiz hinzufügt
+Zudem soll eine neue Klasse "Notizsammlung" erstellt werden, die folgende FunktionalitÃ¤ten bietet:
+- EnthÃ¤lt den Namen der Sammlung sowie eine "Collection" von Notizen
+- eine Methode, die eine Notiz hinzufÃ¼gt
 - eine Methode, die eine Notiz entfernt anhand des Titels
 - eine Methode, die alle Notizen ausgibt
 - eine Methode, die eine Notiz nach Titel sucht und ausgibt
-- eine Methode, die alle Notizen löscht, die älter als ein bestimmtes Datum sind
+- eine Methode, die alle Notizen lÃ¶scht, die Ã¤lter als ein bestimmtes Datum sind
 - PRO: eine Methode, die alle Notizen nach Erstellungsdatum sortiert ausgibt
 ### PRO Thema JSON
 Serialisieren Sie eine der obigen Klassen (mit Collction) in eine JSON-Datei und laden Sie sie wieder. Achten Sie darauf, dass die Daten korrekt serialisiert und deserialisiert werden.
 ## AB04 Zusatzthemen
 ### Tickets mit Autoincrement (Klassenvariablen)
-Implementiere eine Klasse Ticket, deren jede Instanz automatisch eine eindeutige, fortlaufende ID erhält: 1, 2, 3, ...
+Implementiere eine Klasse Ticket, deren jede Instanz automatisch eine eindeutige, fortlaufende ID erhÃ¤lt: 1, 2, 3, ...
 Anforderungen (Akzeptanzkriterien)
 1. Die Klasse besitzt:
-- eine statische Variable nextId (Startwert: 1), nicht öffentlich,
+- eine statische Variable nextId (Startwert: 1), nicht Ã¶ffentlich,
 - eine Instanz-Eigenschaft Id (nur lesbar),
 - weitere Felder/Eigenschaften wie Titel oder ErstelltAm.
 2. Beim Konstruktoraufruf:
 - wird Id auf den aktuellen Wert von nextId gesetzt,
-- danach wird nextId um 1 erhöht.
-- Id darf nachträglich nicht änderbar sein (read-only).
+- danach wird nextId um 1 erhÃ¶ht.
+- Id darf nachtrÃ¤glich nicht Ã¤nderbar sein (read-only).
 3. In Main:
 - Erzeuge mindestens drei Objekte und gib deren Id und optional Titel aus.
-- Die ausgegebenen IDs müssen fortlaufend und eindeutig sein.
-### Parameter beim Start
+- Die ausgegebenen IDs mÃ¼ssen fortlaufend und eindeutig sein.
+### Miniâ€‘CLI mit Flags (Parameter beim Start)
+Implementiere eine Konsolenanwendung, die einen Text verarbeitet.
+Die App akzeptiert optionale Flags und einen Pflichtâ€‘Text (positional, letzter Parameter):  
+UnterstÃ¼tzte Flags:
+- `-h` / `--help`  
+Zeigt die Usage an und beendet das Programm.
+- `-r N` / `--repeat N`  
+Gibt den Text N-mal aus (N â‰¥ 1).
+- `-u` / `--upper`  
+Gibt den Text in Grossbuchstaben aus.
+- `-l` / `--lower`  
+Gibt den Text in Kleinbuchstaben aus.
+Regeln  
+1. Es gibt genau ein Pflichtargument: den auszugebenden Text.
+2. Werden --upper und --lower gleichzeitig angegeben â†’ Fehlermeldung + Usage.
+3. Fehlt der Text oder ist N von --repeat ungÃ¼ltig â†’ Fehlermeldung + Usage.
+4. Flags dÃ¼rfen in beliebiger Reihenfolge vorkommen.
+
+Beispiele
+`app.exe "Hallo Welt"`
+â†’ Ausgabe: Hallo Welt
+`app.exe -u -r 3 "Hallo"`
+â†’ Ausgabe:
+HALLO  
+HALLO  
+HALLO  
+`app.exe --lower "SchÃ¶n"`
+â†’ Ausgabe: schÃ¶n
+`app.exe -r 0 "Test"`
+â†’ Fehler + Usage
+`app.exe -u --lower "Konflikt"`
+â†’ Fehler + Usage
+
+Definition in EBNF:  
+`app [-h|--help] [-u|--upper|-l|--lower] [-r N|--repeat N] <text>`
+
 ### Enum

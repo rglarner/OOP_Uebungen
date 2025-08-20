@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LagerverwaltungTeil2", "OOP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tickets", "OOP_Uebungen\AB04\Tickets\Tickets.csproj", "{5BB29028-3174-46C9-80A8-99EBF1DC07DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCLI", "OOP_Uebungen\AB04\MiniCLI\MiniCLI.csproj", "{EDA5A81C-448B-4B2E-8660-28D7E9D4D181}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BB29028-3174-46C9-80A8-99EBF1DC07DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA5A81C-448B-4B2E-8660-28D7E9D4D181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA5A81C-448B-4B2E-8660-28D7E9D4D181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA5A81C-448B-4B2E-8660-28D7E9D4D181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA5A81C-448B-4B2E-8660-28D7E9D4D181}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
