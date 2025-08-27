@@ -158,3 +158,95 @@ Log("Speicherplatz knapp", LogLevel.Warn);
 Log("Verbindung verloren!", LogLevel.Error);
 ```
 
+## AB05 Vererbung
+### AB05 – Aufgabe: Vererbung & Polymorphie mit „Artikel“
+
+> **Kurzkontext:** In AB05 geht es um Generalisierung/Spezialisierung, Überschreiben (`virtual`/`override`) und sinnvolle Zugriffsmodifikatoren. In dieser Übung modellieren Sie einen Shop mit einer **Superklasse `Artikel`** und drei **Subklassen**: `NonFood`, `Food`, `Gutschein`.
+
+---
+
+#### Lernziele
+- Gemeinsame Daten/Verhalten in einer **Superklasse** bündeln (Generalisierung).
+- Unterschiede in **Subklassen** modellieren (Spezialisierung).
+- **Statische Member** sinnvoll einsetzen (zentrale Lager-/Reporting-Funktionen).
+- **Polymorph** über eine gemeinsame Typbasis arbeiten (Liste von `Artikel`).
+- Transparente Konsolen-Logs: Jede Methode meldet **eine Zeile**, was gerade passiert.
+
+---
+
+#### Vorgaben (fachliche Spezifikation)
+
+##### Superklasse: `Artikel`
+**Eigenschaften**
+- `Id : string` (eindeutig)
+- `Name : string`
+- `Beschreibung : string`
+- `Preis : decimal`
+- `Einheit : string` (z. B. „Stk“, „kg“)
+- **Lagerverwaltung über Klasseneigenschaft**: zentrale Lagerstatistik (z. B. `static` Map von `Id` → aktuelle Menge)
+
+**Methoden**
+- **Konstruktor mit Parametern**: nimmt u. a. `Id` und eine Startmenge entgegen und **erhöht den Lagerbestand** für diese `Id`.
+- `Verkaufen(int menge)`: **reduziert** den Lagerbestand dieser `Id`.  
+- Jede Methode schreibt **eine Zeile** auf die Konsole (z. B. `"[Artikel] +5 auf Lager (Id=..., neu=...)"`, `"[Artikel] -1 verkauft (Id=..., neu=...)"`).
+
+---
+
+##### Unterklasse 1: `NonFood : Artikel`
+**Eigenschaften**
+- `Garantie : bool`
+- `GarantiedauerMonate : int` (**Klassenvariable/static**, für alle Non-Food gleich)
+- `Garantieende : DateTime?` (pro Instanz)
+
+**Spezialverhalten**
+- `Verkaufen(int menge)`:  
+  - Setzt bei erfolgreichem Verkauf (und falls `Garantie == true`) das `Garantieende` auf **Verkaufsdatum + GarantiedauerMonate**.
+  - Ruft anschließend die **Basismethode** auf.
+  - Schreibt **eine Zeile**: z. B. `"[NonFood] Garantie bis 2026-09-01 aktiviert (Id=...)"`.
+
+---
+
+##### Unterklasse 2: `Food : Artikel`
+**Eigenschaften**
+- `Ablaufdatum : DateTime` (pro Instanz)
+
+**Spezialverhalten**
+- `static void AusgabeAbgelaufen()`:  
+  - Gibt **alle abgelaufenen Food-Artikel** (heute > `Ablaufdatum`) in einer formatierten Liste aus.  
+  - Schreibt **eine Zeile pro Fund** (z. B. `"[Food] Abgelaufen: Id=..., Name=..., bis=..."`).  
+  - Tipp: Halten Sie alle Food-Instanzen in einer **statischen Liste** der Klasse `Food` (Registry).
+
+---
+
+##### Unterklasse 3: `Gutschein : Artikel`
+**Eigenschaften**
+- `Restwert : decimal`
+- `Ablaufdatum : DateTime` (wird im **Konstruktor** auf **heute + 5 Jahre** gesetzt)
+
+**Konstruktor**
+- Ruft **`base(...)`** auf (inkl. Startmenge) und setzt danach `Ablaufdatum = DateTime.Today.AddYears(5)`.
+
+**Statische Methoden**
+- `static void AnzeigeAbgelaufeneGutscheine()`  
+  - Gibt alle **abgelaufenen Gutscheine** (heute > `Ablaufdatum`) je **eine Zeile** aus.
+- `static void AnzeigeSummeOffeneGutscheine()`  
+  - Summiert `Restwert` aller **nicht abgelaufenen** Gutscheine und gibt die Summe als **eine Zeile** aus.
+
+---
+
+#### Technische Anforderungen & Hinweise
+- Verwenden Sie **sinnvolle Zugriffsmodifikatoren** (`public` für API, `protected`/`private` für intern).
+- Mindestens **eine Methode** in `Artikel` als `virtual` kennzeichnen und in einer Subklasse **überschreiben**.
+- Jede Methode schreibt **genau eine Zeile** ins Log (Konsole).
+- Prüfen Sie in `Verkaufen` auf ausreichenden Lagerbestand (bei Mangel Fehlermeldung).
+- Für die statischen Reports (`Food`, `Gutschein`) benötigen die Klassen eine **statische Registry** der erzeugten Instanzen.
+
+---
+
+#### Program.cs (Demonstration)
+- Legen Sie **jeweils eine Instanz** von `NonFood`, `Food`, `Gutschein` an.
+- Führen Sie exemplarische **Operationen** aus:  
+  - Non-Food: verkaufen → Garantieende setzen.  
+  - Food: verkaufen → `Food.AusgabeAbgelaufen()`.  
+  - Gutschein: Restwert reduzieren → `AnzeigeAbgelaufeneGutscheine()` & `AnzeigeSummeOffeneGutscheine()`.
+- Erstellen Sie eine `List<Artikel>` und fügen Sie alle Objekte hinzu. Rufen Sie eine **gemeinsame Methode** polymorph auf.
